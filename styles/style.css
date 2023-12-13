@@ -19,13 +19,182 @@
 	--color-background:#eee;
 }
 
+header {
+	display: flex;
+}
+
+header h1 {
+color: white;
+text-align: left;
+font-size: 1em;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+
+}
 
 
 
+h2 a {
+	color: #6b4ba1
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #6b4ba1;
+	text-decoration: none;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
+body {
+	background-image: url(/images/stardewbackground.png);
+	background-size: cover;
+    font-family: apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;
+}
 
+main {
+	background-color: rgba(209,248,255,0.67);
+	margin: 1em;
+}
+
+.talen ul {
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+main ul {
+	background-color: rgba(255,255,255,0.58);
+    margin: 1em;
+	display: flex;
+}
+
+.platformimages {
+	background-color: rgba(255,255,255,0.58);
+	display: grid;
+	grid-template-columns:1fr max-content;
+}
+
+.platformimages :nth-child(4) {
+	grid-column: 1/5;
+}
+
+
+.updates ul {
+	display: grid;
+	grid-template-columns: 1fr 1frs;
+}
+
+h3 {
+  background-color: #03A007;
+  text-align: center;
+  border-color: #007448;
+  box-shadow: 0px 1px rgba(0,0,0,0.3);
+  color: white;
+  text-shadow: 0px 2px #00321f;
+}
+
+.basics  {
+	display: flex;
+	justify-content: center;
+}
+
+.basics ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	border: 1px solid #8DCAF0 ;
+}
+
+
+.derest {
+	display: flex;
+	justify-content: center;
+}
+
+.derest ul {
+	list-style: none;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	border: 1px solid #8DCAF0 ;
+}
+
+/********/
+/* menu */
+/*******/
+
+
+nav ul {
+	display: none;
+	position: absolute;
+}
+
+
+nav ul.menuopen {
+	display: block;
+	background-color: white;
+	padding-top: 1em;
+	padding-right: 10em;
+    
+}
+
+
+nav button{
+	padding: 0;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+
+
+/**
+nav {
+    position:fixed;
+	inset: 0;
+    translate:-100% 0%;
+}
+
+header>button {
+	background: none;
+	border: none;
+}
+
+nav.toonMenu {
+	translate:0% 0%;
+	transition: 0.3s;
+}
+
+nav button {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+nav button img {
+	width: 20px
+}
+
+
+header button{
+	padding: 0;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+
+
+
+**/
